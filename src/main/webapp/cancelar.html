@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancelación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo-header" style="flex-direction: column; align-items: center; display: flex; width: 100%;">
+            <img src="img/gamerly.png" alt="Logo" class="logo-img">
+            <p class="header-subtitle bright-subtitle">
+                Tu lugar para mantenerte actualizado en las últimas noticias del mundo del gaming
+            </p>
+        </div>
+    </div>
+    <div class="form-center-container">
+        <form class="subscribe-form" action="BuscarServlet" method="post"
+            style="flex-direction: column; gap: 18px;" onsubmit="return validarFormulario()">
+            <div class="form-columns">
+                <div class="form-fields">
+                    <p class="novedades-subtitle">Ingresa el correo electronico al que quieres cancelar la suscripción </p>
+                    <input type="text" name="correo" placeholder="Correo electrónico" required>
+                </div>
+            </div>
+            <button type="submit" class="regresar-btn">Cancelar Suscripción</button>
+</body>
+
+</html>
